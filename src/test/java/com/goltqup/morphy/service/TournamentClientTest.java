@@ -1,6 +1,5 @@
 package com.goltqup.morphy.service;
 
-import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.goltqup.morphy.domain.Tournament;
 import org.junit.Before;
@@ -17,6 +16,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.okJson;
 import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.verify;
+import static com.github.tomakehurst.wiremock.core.Options.DYNAMIC_PORT;
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -25,14 +25,13 @@ import static org.springframework.web.reactive.function.client.WebClient.create;
 public class TournamentClientTest {
 
     @Rule
-    public WireMockRule wireMockRule = new WireMockRule(WireMockConfiguration.DYNAMIC_PORT);
+    public WireMockRule wireMockRule = new WireMockRule(DYNAMIC_PORT);
 
-    private WebClient webClient;
     private TournamentClient tournamentClient;
 
     @Before
     public void setup() {
-        webClient = create("http://localhost:" + wireMockRule.port());
+        final WebClient webClient = create("http://localhost:" + wireMockRule.port());
         tournamentClient = new TournamentClient(webClient);
     }
 
