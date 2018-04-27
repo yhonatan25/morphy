@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Tournaments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </meta>
-    <!-- Bootstrap -->
-    <link href="webjars/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="/webjars/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/3.2.0/css/bootstrap.min.css"/>
     </link>
 </head>
 <body>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="webjars/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
 <div class="container">
 
     <div class="row">
         <table id="allTournaments" class="table table-striped">
             <body>
             <tr class="result" data-th-each="tournament : ${tournamentFlux}">
-                <td>[[${tournament.name}]]</td>
+                <td th:text="#{'tournament.'+${tournament.name}+'.'+${tournament.place}+'.'+${tournament.year}+'.name'}"/>
                 <td>
                     <a class="btn btn-primary" data-th-href="@{|/tournaments/${tournament.id}|}">See Tournament</a>
                 </td>
