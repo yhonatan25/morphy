@@ -5,8 +5,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 
 import java.util.Set;
+import java.util.TreeSet;
 
 import static java.util.Collections.unmodifiableSet;
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.toCollection;
 import static org.springframework.util.Assert.hasText;
 import static org.springframework.util.Assert.notEmpty;
 import static org.springframework.util.Assert.state;
@@ -37,7 +40,8 @@ public class Tournament {
         this.name = name;
         this.place = place;
         this.year = year;
-        this.groupSet = unmodifiableSet(groupSet);
+        this.groupSet = unmodifiableSet(groupSet.stream()
+                .collect(toCollection(() -> new TreeSet<>(comparing(Group::getName)))));
     }
 
     public boolean equals(final Object object) {
