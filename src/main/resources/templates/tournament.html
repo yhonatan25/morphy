@@ -9,16 +9,44 @@
           href="/webjars/bootstrap/3.2.0/css/bootstrap.min.css"/>
 </head>
 <body>
-<div class="container">
-
-    <div class="row">
-        <table id="allTournaments" class="table table-striped">
-            <tr class="result" data-th-each="tournament : ${tournamentMono}">
-                <td th:text="#{'tournament.'+${tournament.name}+'.'+${tournament.place}+'.'+${tournament.year}+'.name'}"/>
-            </tr>
-        </table>
+<div class="container" data-th-each="tournament : ${tournamentMono}">
+    <div class="jumbotron text-center">
+        <h1 th:text="#{'tournament.'+${tournament.name}+'.'+${tournament.place}+'.'+${tournament.year}+'.name'}"/>
     </div>
 
+    <div class="list-group">
+        <div class="list-group-item" data-th-each="group:${tournament.groupSet}">
+            <h3 th:text="#{'group.'+${group.name}}"/>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>TEAM</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>+/-</th>
+                    <th>PTS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="result" data-th-each="team : ${group.teamSet}">
+                    <td th:text="#{'team.'+${team.name}}"/>
+                    <td th:text="${team.playedMatches}"/>
+                    <td th:text="${team.wonMatches}"/>
+                    <td th:text="${team.drawMatches}"/>
+                    <td th:text="${team.defeatedMatches}"/>
+                    <td th:text="${team.goalsFor}"/>
+                    <td th:text="${team.goalsAgainst}"/>
+                    <td th:text="${team.goalDifference}"/>
+                    <td th:text="${team.points}"/>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 </body>
