@@ -25,7 +25,7 @@ public class TournamentController {
         return Mono.just("tournaments");
     }
 
-    @RequestMapping("/tournament/{tournamentId}")
+    @RequestMapping("/tournaments/{tournamentId}")
     public Mono<String> getTournamentById(@PathVariable("tournamentId") final String tournamentId, final Model model) {
         final Mono<Tournament> tournamentMono = tournamentClient.getTournament(tournamentId);
         model.addAttribute("tournamentMono", tournamentMono);

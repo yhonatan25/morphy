@@ -53,7 +53,7 @@ public class TournamentControllerTest {
     public void testGetTournamentById() throws Exception {
         given(tournamentClient.getTournament(TOURNAMENT_ID)).willReturn(Mono.just(getExpectedTournament()));
 
-        final EntityExchangeResult<String> stringEntityExchangeResult = webClient.get().uri("/tournament/" + TOURNAMENT_ID)
+        final EntityExchangeResult<String> stringEntityExchangeResult = webClient.get().uri("/tournaments/" + TOURNAMENT_ID)
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(String.class)

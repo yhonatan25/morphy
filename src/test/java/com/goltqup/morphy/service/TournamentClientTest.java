@@ -55,7 +55,7 @@ public class TournamentClientTest {
     @Test
     public void testGetTournamentById() throws IOException {
         final String tournamentJson = getResourceAsString("response_bodies/tournament.json");
-        stubFor(get(urlEqualTo("/tournament/RklGQVJ1c3NpYTIwMTg="))
+        stubFor(get(urlEqualTo("/tournaments/RklGQVJ1c3NpYTIwMTg="))
                 .willReturn(okJson(tournamentJson)));
 
         final Mono<Tournament> tournamentFlux = tournamentClient.getTournament("RklGQVJ1c3NpYTIwMTg=");
@@ -65,6 +65,6 @@ public class TournamentClientTest {
                 .expectComplete()
                 .verify();
 
-        verify(getRequestedFor(urlEqualTo("/tournament/RklGQVJ1c3NpYTIwMTg=")));
+        verify(getRequestedFor(urlEqualTo("/tournaments/RklGQVJ1c3NpYTIwMTg=")));
     }
 }

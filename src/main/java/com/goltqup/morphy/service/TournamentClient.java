@@ -24,7 +24,7 @@ public class TournamentClient {
 
     public Mono<Tournament> getTournament(final String tournamentId) {
         return webClient.get()
-                .uri("/tournament/{tournamentId}", tournamentId)
+                .uri("/tournaments/{tournamentId}", tournamentId)
                 .retrieve()
                 .bodyToMono(Tournament.class);
     }
