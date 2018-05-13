@@ -5,8 +5,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 
 import java.util.Set;
+import java.util.TreeSet;
 
 import static java.util.Collections.unmodifiableSet;
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.toCollection;
 import static org.springframework.util.Assert.hasText;
 import static org.springframework.util.Assert.notEmpty;
 
@@ -25,7 +28,11 @@ public class Group {
         notEmpty(teamSet, "Group team set must not be empty.");
         this.id = id;
         this.name = name;
-        this.teamSet = unmodifiableSet(teamSet);
+        this.teamSet = unmodifiableSet(teamSet.stream()
+                .collect(toCollection(() ->
+                        new TreeSet<>(comparing(Team::getPoints)
+                                .thenComparing(Team::getGoalDifference)
+                                .thenComparing(Team::getName)))));
     }
 
     public boolean equals(final Object object) {
