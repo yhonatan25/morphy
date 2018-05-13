@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Tournaments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,11 +13,8 @@
 
     <div class="row">
         <table id="allTournaments" class="table table-striped">
-            <tr class="result">
-                <td>FIFA World Cup 2018</td>
-                <td>
-                    <a class="btn btn-primary" href="/tournaments/RklGQVJ1c3NpYTIwMTg=">See Tournament</a>
-                </td>
+            <tr class="result" data-th-each="tournament : ${tournamentMono}">
+                <td th:text="#{'tournament.'+${tournament.name}+'.'+${tournament.place}+'.'+${tournament.year}+'.name'}"/>
             </tr>
         </table>
     </div>

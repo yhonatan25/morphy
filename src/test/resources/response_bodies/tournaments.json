@@ -1,1 +1,442 @@
-[{"id":"RklGQVJ1c3NpYTIwMTg=","name":"FIFA","place":"Russia","year":2018}]
+[
+  {
+    "name": "FIFA",
+    "place": "Russia",
+    "year": 2018,
+    "groups": [
+      {
+        "name": "C",
+        "teams": [
+          {
+            "id": "RGVubWFyaw==",
+            "name": "Denmark",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "QXVzdHJhbGlh",
+            "name": "Australia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "UGVydQ==",
+            "name": "Peru",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "RnJhbmNl",
+            "name": "France",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "Qw=="
+      },
+      {
+        "name": "B",
+        "teams": [
+          {
+            "id": "SVJfSXJhbg==",
+            "name": "IR_Iran",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "UG9ydHVnYWw=",
+            "name": "Portugal",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "TW9yb2Njbw==",
+            "name": "Morocco",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "U3BhaW4=",
+            "name": "Spain",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "Qg=="
+      },
+      {
+        "name": "G",
+        "teams": [
+          {
+            "id": "VHVuaXNpYQ==",
+            "name": "Tunisia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "QmVsZ2l1bQ==",
+            "name": "Belgium",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "UGFuYW1h",
+            "name": "Panama",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "RW5nbGFuZA==",
+            "name": "England",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "Rw=="
+      },
+      {
+        "name": "F",
+        "teams": [
+          {
+            "id": "U3dlZGVu",
+            "name": "Sweden",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "TWV4aWNv",
+            "name": "Mexico",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "R2VybWFueQ==",
+            "name": "Germany",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "S29yZWFfUmVwdWJsaWM=",
+            "name": "Korea_Republic",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "Rg=="
+      },
+      {
+        "name": "A",
+        "teams": [
+          {
+            "id": "U2F1ZGlfQXJhYmlh",
+            "name": "Saudi_Arabia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "RWd5cHQ=",
+            "name": "Egypt",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "VXJ1Z3VheQ==",
+            "name": "Uruguay",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "UnVzc2lh",
+            "name": "Russia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "QQ=="
+      },
+      {
+        "name": "H",
+        "teams": [
+          {
+            "id": "UG9sYW5k",
+            "name": "Poland",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "SmFwYW4=",
+            "name": "Japan",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "U2VuZWdhbA==",
+            "name": "Senegal",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "Q29sb21iaWE=",
+            "name": "Colombia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "SA=="
+      },
+      {
+        "name": "E",
+        "teams": [
+          {
+            "id": "U3dpdHplcmxhbmQ=",
+            "name": "Switzerland",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "Q29zdGFfUmljYQ==",
+            "name": "Costa_Rica",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "QnJhemls",
+            "name": "Brazil",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "U2VyYmlh",
+            "name": "Serbia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "RQ=="
+      },
+      {
+        "name": "D",
+        "teams": [
+          {
+            "id": "TmlnZXJpYQ==",
+            "name": "Nigeria",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "SWNlbGFuZA==",
+            "name": "Iceland",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "QXJnZW50aW5h",
+            "name": "Argentina",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          },
+          {
+            "id": "Q3JvYXRpYQ==",
+            "name": "Croatia",
+            "playedMatches": 0,
+            "wonMatches": 0,
+            "drawMatches": 0,
+            "defeatedMatches": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0,
+            "points": 0
+          }
+        ],
+        "id": "RA=="
+      }
+    ],
+    "id": "RklGQVJ1c3NpYTIwMTg="
+  }
+]

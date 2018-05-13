@@ -35,8 +35,10 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile('org.webjars:bootstrap')
 	compile('org.webjars:jquery')
+	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.cloud:spring-cloud-starter-contract-stub-runner')
+    testCompile('io.projectreactor:reactor-test')
 }
 
 dependencyManagement {

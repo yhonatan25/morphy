@@ -7,6 +7,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 
@@ -18,9 +19,9 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.verify;
 import static com.github.tomakehurst.wiremock.core.Options.DYNAMIC_PORT;
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.springframework.web.reactive.function.client.WebClient.create;
+import static com.goltqup.morphy.TournamentAssert.getExpectedTournament;
+import static com.goltqup.morphy.TournamentAssert.tournamentMatchesExpected;
+import static reactor.test.StepVerifier.create;
 
 public class TournamentClientTest {
 
@@ -31,7 +32,7 @@ public class TournamentClientTest {
 
     @Before
     public void setup() {
-        final WebClient webClient = create("http://localhost:" + wireMockRule.port());
+        final WebClient webClient = WebClient.create("http://localhost:" + wireMockRule.port());
         tournamentClient = new TournamentClient(webClient);
     }
 
@@ -42,10 +43,28 @@ public class TournamentClientTest {
                 .willReturn(okJson(tournamentJson)));
 
         final Flux<Tournament> tournamentFlux = tournamentClient.getTournaments();
-        final Tournament tournament = tournamentFlux.blockFirst();
 
-        final Tournament expectedTournament = new Tournament("RklGQVJ1c3NpYTIwMTg=", "FIFA", "Russia", 2018);
-        assertThat(tournament, is(expectedTournament));
+        create(tournamentFlux)
+                .expectNextMatches(tournament -> tournamentMatchesExpected(tournament, getExpectedTournament()))
+                .expectComplete()
+                .verify();
+
         verify(getRequestedFor(urlEqualTo("/tournaments")));
+    }
+
+    @Test
+    public void testGetTournamentById() throws IOException {
+        final String tournamentJson = getResourceAsString("response_bodies/tournament.json");
+        stubFor(get(urlEqualTo("/tournament/RklGQVJ1c3NpYTIwMTg="))
+                .willReturn(okJson(tournamentJson)));
+
+        final Mono<Tournament> tournamentFlux = tournamentClient.getTournament("RklGQVJ1c3NpYTIwMTg=");
+
+        create(tournamentFlux)
+                .expectNextMatches(tournament -> tournamentMatchesExpected(tournament, getExpectedTournament()))
+                .expectComplete()
+                .verify();
+
+        verify(getRequestedFor(urlEqualTo("/tournament/RklGQVJ1c3NpYTIwMTg=")));
     }
 }
