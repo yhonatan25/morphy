@@ -13,11 +13,14 @@ import org.springframework.web.server.adapter.DefaultServerWebExchange;
 import org.springframework.web.server.adapter.HttpWebHandlerAdapter;
 import reactor.core.publisher.Mono;
 
+import static org.springframework.http.HttpHeaders.ACCEPT_LANGUAGE;
 import static org.springframework.util.StringUtils.isEmpty;
 
 @Component
 public class LanguageQueryParameterWebFilter implements WebFilter {
 
+    public static final String DEFAULT_ACCEPTED_LANGUAGE = "es-GT";
+    public static final String LANGUAGE_QUERY_PARAM_KEY = "language";
     private final ApplicationContext applicationContext;
 
     private HttpWebHandlerAdapter httpWebHandlerAdapter;
@@ -35,22 +38,22 @@ public class LanguageQueryParameterWebFilter implements WebFilter {
     public Mono<Void> filter(final ServerWebExchange exchange, final WebFilterChain chain) {
         final ServerHttpRequest request = exchange.getRequest();
         final MultiValueMap<String, String> queryParams = request.getQueryParams();
-        final String languageValue = queryParams.getFirst("language");
+        final String languageQueryParamValue = queryParams.getFirst(LANGUAGE_QUERY_PARAM_KEY);
 
-        final ServerWebExchange localizedExchange = getServerWebExchange(languageValue, exchange);
+        final ServerWebExchange localizedExchange = getServerWebExchange(languageQueryParamValue, exchange);
         return chain.filter(localizedExchange);
     }
 
-    private ServerWebExchange getServerWebExchange(final String languageValue, final ServerWebExchange exchange) {
-        return isEmpty(languageValue)
-                ? exchange
-                : getLocalizedServerWebExchange(languageValue, exchange);
+    private ServerWebExchange getServerWebExchange(final String languageQueryParamValue, final ServerWebExchange exchange) {
+        return isEmpty(languageQueryParamValue)
+                ? getLocalizedServerWebExchange(DEFAULT_ACCEPTED_LANGUAGE, exchange)
+                : getLocalizedServerWebExchange(languageQueryParamValue, exchange);
     }
 
-    private ServerWebExchange getLocalizedServerWebExchange(final String languageValue, final ServerWebExchange exchange) {
+    private ServerWebExchange getLocalizedServerWebExchange(final String languageQueryParamValue, final ServerWebExchange exchange) {
         final ServerHttpRequest httpRequest = exchange.getRequest()
                 .mutate()
-                .headers(httpHeaders -> httpHeaders.set("Accept-Language", languageValue))
+                .headers(httpHeaders -> httpHeaders.set(ACCEPT_LANGUAGE, languageQueryParamValue))
                 .build();
 
         return new DefaultServerWebExchange(httpRequest, exchange.getResponse(),
