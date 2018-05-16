@@ -19,8 +19,8 @@ import static org.springframework.util.StringUtils.isEmpty;
 @Component
 public class LanguageQueryParameterWebFilter implements WebFilter {
 
-    public static final String DEFAULT_ACCEPTED_LANGUAGE = "es-GT";
-    public static final String LANGUAGE_QUERY_PARAM_KEY = "language";
+    private static final String DEFAULT_ACCEPTED_LANGUAGE = "es-GT";
+    private static final String LANGUAGE_QUERY_PARAM_KEY = "language";
     private final ApplicationContext applicationContext;
 
     private HttpWebHandlerAdapter httpWebHandlerAdapter;
