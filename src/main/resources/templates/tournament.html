@@ -7,6 +7,8 @@
     <script src="/webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet"
           href="/webjars/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
 </head>
 <body>
 <div class="container" data-th-each="tournament : ${tournamentMono}">
@@ -54,23 +56,23 @@
                 <div th:id="'collapse'+${group.name}" class="panel-collapse collapse">
                     <div class="list-group">
                         <div class="list-group-item" data-th-each="match:${group.matchSet}">
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="row align-items-center">
-                                    <div class="col-2">
+                                    <div class="col-md-3">
                                         <p th:text="${match.stadium}"/>
                                         <p th:text="${#temporals.format(match.schedule, 'yyyy-MM-dd HH:mm:ss')}"/>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-md-3">
                                         <h1>
                                             <p th:text="${match.localTeam}"/>
                                         </h1>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-md-3">
                                         <h1>
                                             <p th:text="${match.localGoals}+' - '+${match.visitorGoals}"/>
                                         </h1>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-md-3">
                                         <h1>
                                             <p th:text="${match.visitorTeam}"/>
                                         </h1>
