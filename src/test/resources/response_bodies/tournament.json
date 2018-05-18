@@ -55,14 +55,70 @@
           "points": 0
         }
       ],
+      "matches": [
+        {
+          "id": "TW9yZG92aWFfQXJlbmEyMDE4LTA2LTE2VDE2OjAw",
+          "stadium": "Mordovia_Arena",
+          "schedule": "2018-06-16T16:00:00",
+          "localTeam": "Peru",
+          "localGoals": 0,
+          "visitorTeam": "Denmark",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RWthdGVyaW5idXJnX0FyZW5hMjAxOC0wNi0yMVQxNTowMA==",
+          "stadium": "Ekaterinburg_Arena",
+          "schedule": "2018-06-21T15:00:00",
+          "localTeam": "France",
+          "localGoals": 0,
+          "visitorTeam": "Peru",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RmlzaHRfU3RhZGl1bTIwMTgtMDYtMjZUMTQ6MDA=",
+          "stadium": "Fisht_Stadium",
+          "schedule": "2018-06-26T14:00:00",
+          "localTeam": "Australia",
+          "localGoals": 0,
+          "visitorTeam": "Peru",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2F6YW5fQXJlbmEyMDE4LTA2LTE2VDEwOjAw",
+          "stadium": "Kazan_Arena",
+          "schedule": "2018-06-16T10:00:00",
+          "localTeam": "France",
+          "localGoals": 0,
+          "visitorTeam": "Australia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "THV6aG5pa2lfU3RhZGl1bTIwMTgtMDYtMjZUMTQ6MDA=",
+          "stadium": "Luzhniki_Stadium",
+          "schedule": "2018-06-26T14:00:00",
+          "localTeam": "Denmark",
+          "localGoals": 0,
+          "visitorTeam": "France",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FtYXJhX0FyZW5hMjAxOC0wNi0yMVQxMjowMA==",
+          "stadium": "Samara_Arena",
+          "schedule": "2018-06-21T12:00:00",
+          "localTeam": "Denmark",
+          "localGoals": 0,
+          "visitorTeam": "Australia",
+          "visitorGoals": 0
+        }
+      ],
       "id": "Qw=="
     },
     {
       "name": "B",
       "teams": [
         {
-          "id": "SVJfSXJhbg==",
-          "name": "IR_Iran",
+          "id": "UG9ydHVnYWw=",
+          "name": "Portugal",
           "playedMatches": 0,
           "wonMatches": 0,
           "drawMatches": 0,
@@ -73,8 +129,8 @@
           "points": 0
         },
         {
-          "id": "UG9ydHVnYWw=",
-          "name": "Portugal",
+          "id": "SVJfSXJhbg==",
+          "name": "IR_Iran",
           "playedMatches": 0,
           "wonMatches": 0,
           "drawMatches": 0,
@@ -107,6 +163,62 @@
           "goalsAgainst": 0,
           "goalDifference": 0,
           "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "TW9yZG92aWFfQXJlbmEyMDE4LTA2LTIwVDE4OjAw",
+          "stadium": "Mordovia_Arena",
+          "schedule": "2018-06-20T18:00:00",
+          "localTeam": "IR_Iran",
+          "localGoals": 0,
+          "visitorTeam": "Portugal",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2FsaW5pbmdyYWRfU3RhZGl1bTIwMTgtMDYtMjBUMTg6MDA=",
+          "stadium": "Kaliningrad_Stadium",
+          "schedule": "2018-06-20T18:00:00",
+          "localTeam": "Spain",
+          "localGoals": 0,
+          "visitorTeam": "Morocco",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2F6YW5fQXJlbmEyMDE4LTA2LTIwVDE4OjAw",
+          "stadium": "Kazan_Arena",
+          "schedule": "2018-06-20T18:00:00",
+          "localTeam": "IR_Iran",
+          "localGoals": 0,
+          "visitorTeam": "Spain",
+          "visitorGoals": 0
+        },
+        {
+          "id": "THV6aG5pa2lfU3RhZGl1bTIwMTgtMDYtMjBUMTI6MDA=",
+          "stadium": "Luzhniki_Stadium",
+          "schedule": "2018-06-20T12:00:00",
+          "localTeam": "Portugal",
+          "localGoals": 0,
+          "visitorTeam": "Morocco",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FpbnRfUGV0ZXJzYnVyZ19TdGFkaXVtMjAxOC0wNi0xNVQxNTowMA==",
+          "stadium": "Saint_Petersburg_Stadium",
+          "schedule": "2018-06-15T15:00:00",
+          "localTeam": "Morocco",
+          "localGoals": 0,
+          "visitorTeam": "IR_Iran",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RmlzaHRfU3RhZGl1bTIwMTgtMDYtMTVUMTg6MDA=",
+          "stadium": "Fisht_Stadium",
+          "schedule": "2018-06-15T18:00:00",
+          "localTeam": "Portugal",
+          "localGoals": 0,
+          "visitorTeam": "Spain",
+          "visitorGoals": 0
         }
       ],
       "id": "Qg=="
@@ -163,6 +275,62 @@
           "points": 0
         }
       ],
+      "matches": [
+        {
+          "id": "S2FsaW5pbmdyYWRfU3RhZGl1bTIwMTgtMDYtMjhUMTg6MDA=",
+          "stadium": "Kaliningrad_Stadium",
+          "schedule": "2018-06-28T18:00:00",
+          "localTeam": "England",
+          "localGoals": 0,
+          "visitorTeam": "Belgium",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U3BhcnRha19TdGFkaXVtMjAxOC0wNi0yM1QxMjowMA==",
+          "stadium": "Spartak_Stadium",
+          "schedule": "2018-06-23T12:00:00",
+          "localTeam": "Belgium",
+          "localGoals": 0,
+          "visitorTeam": "Tunisia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "TW9yZG92aWFfQXJlbmEyMDE4LTA2LTI4VDE4OjAw",
+          "stadium": "Mordovia_Arena",
+          "schedule": "2018-06-28T18:00:00",
+          "localTeam": "Panama",
+          "localGoals": 0,
+          "visitorTeam": "Tunisia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Vm9sZ29ncmFkX0FyZW5hMjAxOC0wNi0xOFQxODowMA==",
+          "stadium": "Volgograd_Arena",
+          "schedule": "2018-06-18T18:00:00",
+          "localTeam": "Tunisia",
+          "localGoals": 0,
+          "visitorTeam": "England",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Tml6aG55X05vdmdvcm9kX1N0YWRpdW0yMDE4LTA2LTI0VDEyOjAw",
+          "stadium": "Nizhny_Novgorod_Stadium",
+          "schedule": "2018-06-24T12:00:00",
+          "localTeam": "England",
+          "localGoals": 0,
+          "visitorTeam": "Panama",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RmlzaHRfU3RhZGl1bTIwMTgtMDYtMThUMTU6MDA=",
+          "stadium": "Fisht_Stadium",
+          "schedule": "2018-06-18T15:00:00",
+          "localTeam": "Belgium",
+          "localGoals": 0,
+          "visitorTeam": "Panama",
+          "visitorGoals": 0
+        }
+      ],
       "id": "Rw=="
     },
     {
@@ -215,6 +383,62 @@
           "goalsAgainst": 0,
           "goalDifference": 0,
           "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "RmlzaHRfU3RhZGl1bTIwMTgtMDYtMjNUMTg6MDA=",
+          "stadium": "Fisht_Stadium",
+          "schedule": "2018-06-23T18:00:00",
+          "localTeam": "Germany",
+          "localGoals": 0,
+          "visitorTeam": "Sweden",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Tml6aG55X05vdmdvcm9kX1N0YWRpdW0yMDE4LTA2LTE4VDEyOjAw",
+          "stadium": "Nizhny_Novgorod_Stadium",
+          "schedule": "2018-06-18T12:00:00",
+          "localTeam": "Sweden",
+          "localGoals": 0,
+          "visitorTeam": "Korea_Republic",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2F6YW5fQXJlbmEyMDE4LTA2LTI3VDE0OjAw",
+          "stadium": "Kazan_Arena",
+          "schedule": "2018-06-27T14:00:00",
+          "localTeam": "Korea_Republic",
+          "localGoals": 0,
+          "visitorTeam": "Germany",
+          "visitorGoals": 0
+        },
+        {
+          "id": "THV6aG5pa2lfU3RhZGl1bTIwMTgtMDYtMTdUMTU6MDA=",
+          "stadium": "Luzhniki_Stadium",
+          "schedule": "2018-06-17T15:00:00",
+          "localTeam": "Germany",
+          "localGoals": 0,
+          "visitorTeam": "Mexico",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Um9zdG92X0FyZW5hMjAxOC0wNi0yM1QxNTowMA==",
+          "stadium": "Rostov_Arena",
+          "schedule": "2018-06-23T15:00:00",
+          "localTeam": "Korea_Republic",
+          "localGoals": 0,
+          "visitorTeam": "Mexico",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RWthdGVyaW5idXJnX0FyZW5hMjAxOC0wNi0yN1QxNDowMA==",
+          "stadium": "Ekaterinburg_Arena",
+          "schedule": "2018-06-27T14:00:00",
+          "localTeam": "Mexico",
+          "localGoals": 0,
+          "visitorTeam": "Sweden",
+          "visitorGoals": 0
         }
       ],
       "id": "Rg=="
@@ -271,6 +495,62 @@
           "points": 0
         }
       ],
+      "matches": [
+        {
+          "id": "Vm9sZ29ncmFkX0FyZW5hMjAxOC0wNi0yNVQxNDowMA==",
+          "stadium": "Volgograd_Arena",
+          "schedule": "2018-06-25T14:00:00",
+          "localTeam": "Saudi_Arabia",
+          "localGoals": 0,
+          "visitorTeam": "Egypt",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FpbnRfUGV0ZXJzYnVyZ19TdGFkaXVtMjAxOC0wNi0xOVQxODowMA==",
+          "stadium": "Saint_Petersburg_Stadium",
+          "schedule": "2018-06-19T18:00:00",
+          "localTeam": "Russia",
+          "localGoals": 0,
+          "visitorTeam": "Egypt",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FtYXJhX0FyZW5hMjAxOC0wNi0yNVQxNDowMA==",
+          "stadium": "Samara_Arena",
+          "schedule": "2018-06-25T14:00:00",
+          "localTeam": "Uruguay",
+          "localGoals": 0,
+          "visitorTeam": "Russia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "THV6aG5pa2lfU3RhZGl1bTIwMTgtMDYtMTRUMTU6MDA=",
+          "stadium": "Luzhniki_Stadium",
+          "schedule": "2018-06-14T15:00:00",
+          "localTeam": "Russia",
+          "localGoals": 0,
+          "visitorTeam": "Saudi__Arabia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Um9zdG92X0FyZW5hMjAxOC0wNi0yMFQxNTowMA==",
+          "stadium": "Rostov_Arena",
+          "schedule": "2018-06-20T15:00:00",
+          "localTeam": "Uruguay",
+          "localGoals": 0,
+          "visitorTeam": "Saudi_Arabia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RWthdGVyaW5idXJnX0FyZW5hMjAxOC0wNi0xNVQxMjowMA==",
+          "stadium": "Ekaterinburg_Arena",
+          "schedule": "2018-06-15T12:00:00",
+          "localTeam": "Egypt",
+          "localGoals": 0,
+          "visitorTeam": "Uruguay",
+          "visitorGoals": 0
+        }
+      ],
       "id": "QQ=="
     },
     {
@@ -323,6 +603,62 @@
           "goalsAgainst": 0,
           "goalDifference": 0,
           "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "S2F6YW5fQXJlbmEyMDE4LTA2LTI0VDE4OjAw",
+          "stadium": "Kazan_Arena",
+          "schedule": "2018-06-24T18:00:00",
+          "localTeam": "Poland",
+          "localGoals": 0,
+          "visitorTeam": "Colombia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U3BhcnRha19TdGFkaXVtMjAxOC0wNi0xOVQxNTowMA==",
+          "stadium": "Spartak_Stadium",
+          "schedule": "2018-06-19T15:00:00",
+          "localTeam": "Poland",
+          "localGoals": 0,
+          "visitorTeam": "Senegal",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FtYXJhX0FyZW5hMjAxOC0wNi0yOFQxNDowMA==",
+          "stadium": "Samara_Arena",
+          "schedule": "2018-06-28T14:00:00",
+          "localTeam": "Senegal",
+          "localGoals": 0,
+          "visitorTeam": "Colombia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "RWthdGVyaW5idXJnX0FyZW5hMjAxOC0wNi0yNFQxNTowMA==",
+          "stadium": "Ekaterinburg_Arena",
+          "schedule": "2018-06-24T15:00:00",
+          "localTeam": "Japan",
+          "localGoals": 0,
+          "visitorTeam": "Senegal",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Vm9sZ29ncmFkX0FyZW5hMjAxOC0wNi0yOFQxNDowMA==",
+          "stadium": "Volgograd_Arena",
+          "schedule": "2018-06-28T14:00:00",
+          "localTeam": "Japan",
+          "localGoals": 0,
+          "visitorTeam": "Poland",
+          "visitorGoals": 0
+        },
+        {
+          "id": "TW9yZG92aWFfQXJlbmEyMDE4LTA2LTE5VDEyOjAw",
+          "stadium": "Mordovia_Arena",
+          "schedule": "2018-06-19T12:00:00",
+          "localTeam": "Colombia",
+          "localGoals": 0,
+          "visitorTeam": "Japan",
+          "visitorGoals": 0
         }
       ],
       "id": "SA=="
@@ -379,6 +715,62 @@
           "points": 0
         }
       ],
+      "matches": [
+        {
+          "id": "U3BhcnRha19TdGFkaXVtMjAxOC0wNi0yN1QxODowMA==",
+          "stadium": "Spartak_Stadium",
+          "schedule": "2018-06-27T18:00:00",
+          "localTeam": "Serbia",
+          "localGoals": 0,
+          "visitorTeam": "Brazil",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Um9zdG92X0FyZW5hMjAxOC0wNi0xN1QxODowMA==",
+          "stadium": "Rostov_Arena",
+          "schedule": "2018-06-17T18:00:00",
+          "localTeam": "Brazil",
+          "localGoals": 0,
+          "visitorTeam": "Switzerland",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FtYXJhX0FyZW5hMjAxOC0wNi0xN1QxMjowMA==",
+          "stadium": "Samara_Arena",
+          "schedule": "2018-06-17T12:00:00",
+          "localTeam": "Costa_Rica",
+          "localGoals": 0,
+          "visitorTeam": "Serbia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Tml6aG55X05vdmdvcm9kMjAxOC0wNi0yN1QxODowMA==",
+          "stadium": "Nizhny_Novgorod",
+          "schedule": "2018-06-27T18:00:00",
+          "localTeam": "Switzerland",
+          "localGoals": 0,
+          "visitorTeam": "Costa_Rica",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FpbnRfUGV0ZXJzYnVyZ19TdGFkaXVtMjAxOC0wNi0yMlQxMjowMA==",
+          "stadium": "Saint_Petersburg_Stadium",
+          "schedule": "2018-06-22T12:00:00",
+          "localTeam": "Brazil",
+          "localGoals": 0,
+          "visitorTeam": "Costa_Rica",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2FsaW5pbmdyYWRfU3RhZGl1bTIwMTgtMDYtMjJUMTg6MDA=",
+          "stadium": "Kaliningrad_Stadium",
+          "schedule": "2018-06-22T18:00:00",
+          "localTeam": "Serbia",
+          "localGoals": 0,
+          "visitorTeam": "Switzerland",
+          "visitorGoals": 0
+        }
+      ],
       "id": "RQ=="
     },
     {
@@ -431,6 +823,62 @@
           "goalsAgainst": 0,
           "goalDifference": 0,
           "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "Vm9sZ29ncmFkX0FyZW5hMjAxOC0wNi0yMlQxNTowMA==",
+          "stadium": "Volgograd_Arena",
+          "schedule": "2018-06-22T15:00:00",
+          "localTeam": "Nigeria",
+          "localGoals": 0,
+          "visitorTeam": "Iceland",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Um9zdG92X0FyZW5hMjAxOC0wNi0yNlQxODowMA==",
+          "stadium": "Rostov_Arena",
+          "schedule": "2018-06-26T18:00:00",
+          "localTeam": "Iceland",
+          "localGoals": 0,
+          "visitorTeam": "Croatia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U3BhcnRha19TdGFkaXVtMjAxOC0wNi0xNlQxMzowMA==",
+          "stadium": "Spartak_Stadium",
+          "schedule": "2018-06-16T13:00:00",
+          "localTeam": "Argentina",
+          "localGoals": 0,
+          "visitorTeam": "Iceland",
+          "visitorGoals": 0
+        },
+        {
+          "id": "S2FsaW5pbmdyYWRfU3RhZGl1bTIwMTgtMDYtMTZUMTk6MDA=",
+          "stadium": "Kaliningrad_Stadium",
+          "schedule": "2018-06-16T19:00:00",
+          "localTeam": "Croatia",
+          "localGoals": 0,
+          "visitorTeam": "Nigeria",
+          "visitorGoals": 0
+        },
+        {
+          "id": "Tml6aG55X05vdmdvcm9kX1N0YWRpdW0yMDE4LTA2LTIxVDE4OjAw",
+          "stadium": "Nizhny_Novgorod_Stadium",
+          "schedule": "2018-06-21T18:00:00",
+          "localTeam": "Argentina",
+          "localGoals": 0,
+          "visitorTeam": "Croatia",
+          "visitorGoals": 0
+        },
+        {
+          "id": "U2FpbnRfUGV0ZXJzYnVyZ19TdGFkaXVtMjAxOC0wNi0yNlQxODowMA==",
+          "stadium": "Saint_Petersburg_Stadium",
+          "schedule": "2018-06-26T18:00:00",
+          "localTeam": "Nigeria",
+          "localGoals": 0,
+          "visitorTeam": "Argentina",
+          "visitorGoals": 0
         }
       ],
       "id": "RA=="

@@ -20,12 +20,17 @@ public class Group {
     private final String name;
     @JsonProperty("teams")
     private final Set<Team> teamSet;
+    @JsonProperty("matches")
+    private final Set<Match> matchSet;
 
     @JsonCreator
-    public Group(@JsonProperty("id") final String id, @JsonProperty("name") final String name, @JsonProperty("teams") final Set<Team> teamSet) {
+    public Group(@JsonProperty("id") final String id, @JsonProperty("name") final String name,
+                 @JsonProperty("teams") final Set<Team> teamSet,
+                 @JsonProperty("matches") final Set<Match> matchSet) {
         hasText(id, "Group id must have text.");
         hasText(name, "Group name must have text.");
         notEmpty(teamSet, "Group team set must not be empty.");
+        notEmpty(matchSet, "Group match set must not be empty.");
         this.id = id;
         this.name = name;
         this.teamSet = unmodifiableSet(teamSet.stream()
@@ -33,6 +38,9 @@ public class Group {
                         new TreeSet<>(comparing(Team::getPoints)
                                 .thenComparing(Team::getGoalDifference)
                                 .thenComparing(Team::getName)))));
+        this.matchSet = unmodifiableSet(matchSet.stream()
+                .collect(toCollection(() ->
+                        new TreeSet<>(comparing(Match::getSchedule)))));
     }
 
     public boolean equals(final Object object) {

@@ -15,7 +15,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
-import static com.goltqup.morphy.TournamentAssert.getExpectedTournament;
+import static com.goltqup.morphy.TournamentProvider.getExpectedTournament;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.BDDMockito.given;

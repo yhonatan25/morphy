@@ -19,8 +19,8 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.verify;
 import static com.github.tomakehurst.wiremock.core.Options.DYNAMIC_PORT;
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
-import static com.goltqup.morphy.TournamentAssert.getExpectedTournament;
 import static com.goltqup.morphy.TournamentAssert.tournamentMatchesExpected;
+import static com.goltqup.morphy.TournamentProvider.getExpectedTournament;
 import static reactor.test.StepVerifier.create;
 
 public class TournamentClientTest {
