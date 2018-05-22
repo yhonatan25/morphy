@@ -1,5 +1,6 @@
 package com.goltqup.morphy.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.event.EventListener;
@@ -18,9 +19,10 @@ import static org.springframework.util.StringUtils.isEmpty;
 
 @Component
 public class LanguageQueryParameterWebFilter implements WebFilter {
-
-    private static final String DEFAULT_ACCEPTED_LANGUAGE = "es-GT";
     private static final String LANGUAGE_QUERY_PARAM_KEY = "language";
+
+    @Value("${accepted.language.default:es-GT}")
+    private String defaultAcceptedLanguage;
     private final ApplicationContext applicationContext;
 
     private HttpWebHandlerAdapter httpWebHandlerAdapter;
@@ -46,7 +48,7 @@ public class LanguageQueryParameterWebFilter implements WebFilter {
 
     private ServerWebExchange getServerWebExchange(final String languageQueryParamValue, final ServerWebExchange exchange) {
         return isEmpty(languageQueryParamValue)
-                ? getLocalizedServerWebExchange(DEFAULT_ACCEPTED_LANGUAGE, exchange)
+                ? getLocalizedServerWebExchange(defaultAcceptedLanguage, exchange)
                 : getLocalizedServerWebExchange(languageQueryParamValue, exchange);
     }
 

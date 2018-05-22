@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Tournaments</title>
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="/webjars/jquery/2.1.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -59,12 +60,12 @@
                             <div class="container-fluid">
                                 <div class="row align-items-center">
                                     <div class="col-md-3">
-                                        <p th:text="${match.stadium}"/>
-                                        <p th:text="${#temporals.format(match.schedule, 'yyyy-MM-dd HH:mm:ss')}"/>
+                                        <p th:text="#{'stadium.'+${match.stadium}}"/>
+                                        <p th:text="${#temporals.format(match.schedule, #locale)}"/>
                                     </div>
                                     <div class="col-md-3">
                                         <h1>
-                                            <p th:text="${match.localTeam}"/>
+                                            <p th:text="#{'team.'+${match.localTeam}}"/>
                                         </h1>
                                     </div>
                                     <div class="col-md-3">
@@ -74,7 +75,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <h1>
-                                            <p th:text="${match.visitorTeam}"/>
+                                            <p th:text="#{'team.'+${match.visitorTeam}}"/>
                                         </h1>
                                     </div>
                                 </div>
