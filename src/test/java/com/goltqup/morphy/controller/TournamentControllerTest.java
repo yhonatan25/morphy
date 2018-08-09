@@ -16,6 +16,7 @@ import reactor.core.publisher.Mono;
 
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
 import static com.goltqup.morphy.TournamentProvider.getExpectedTournament;
+import static com.goltqup.morphy.TournamentProvider.getExpectedTournamentFromJson;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.BDDMockito.given;
@@ -35,7 +36,7 @@ public class TournamentControllerTest {
 
     @Test
     public void testGetTournaments() throws Exception {
-        given(tournamentClient.getTournaments()).willReturn(Flux.just(getExpectedTournament()));
+        given(tournamentClient.getTournaments()).willReturn(Flux.just(getExpectedTournamentFromJson()));
 
         final EntityExchangeResult<String> stringEntityExchangeResult = webClient.get().uri("/tournaments")
                 .exchange()

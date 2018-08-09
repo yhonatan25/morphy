@@ -5,11 +5,15 @@ import com.goltqup.morphy.domain.Match;
 import com.goltqup.morphy.domain.Team;
 import com.goltqup.morphy.domain.Tournament;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import static com.goltqup.morphy.TestUtils.getObjectFromJson;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toSet;
 
@@ -50,7 +54,7 @@ public class TournamentProvider {
         final LocalDateTime schedule = LocalDateTime.parse(matchArray[2]);
         final String localTeam = matchArray[3];
         final String visitorTeam = matchArray[4];
-        return new Match.MatchBuilder(id, stadium, schedule, localTeam, visitorTeam).build();
+        return new Match.MatchBuilder(id, stadium, Date.from(schedule.atZone(ZoneId.systemDefault()).toInstant()), localTeam, visitorTeam).build();
     }
 
     private static Map<String, GroupDTO> getTournamentGroupsMap() {
@@ -121,6 +125,10 @@ public class TournamentProvider {
                                 "S2FsaW5pbmdyYWRfU3RhZGl1bTIwMTgtMDYtMjJUMTg6MDA= Kaliningrad_Stadium 2018-06-22T18:00 Serbia Switzerland")));
 
         return tournamentGroupsMap;
+    }
+
+    public static Tournament getExpectedTournamentFromJson() throws IOException {
+        return getObjectFromJson("/expected/tournament.json", Tournament.class);
     }
 
 }

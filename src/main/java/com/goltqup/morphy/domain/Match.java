@@ -6,7 +6,10 @@ import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 
+import static java.time.LocalDateTime.ofInstant;
 import static org.springframework.util.Assert.hasText;
 import static org.springframework.util.Assert.notNull;
 
@@ -59,7 +62,7 @@ public class Match {
 
         public MatchBuilder(@JsonProperty("id") final String id,
                             @JsonProperty("stadium") final String stadium,
-                            @JsonProperty("schedule") final LocalDateTime schedule,
+                            @JsonProperty("schedule") final Date schedule,
                             @JsonProperty("localTeam") final String localTeam,
                             @JsonProperty("visitorTeam") final String visitorTeam) {
             hasText(stadium, "Stadium must have text.");
@@ -69,7 +72,7 @@ public class Match {
 
             this.id = id;
             this.stadium = stadium;
-            this.schedule = schedule;
+            this.schedule = ofInstant(schedule.toInstant(), ZoneId.of("GMT"));
             this.localTeam = localTeam;
             this.visitorTeam = visitorTeam;
         }

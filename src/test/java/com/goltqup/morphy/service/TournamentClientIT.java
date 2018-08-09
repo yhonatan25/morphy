@@ -23,7 +23,7 @@ import static com.goltqup.morphy.TournamentAssert.tournamentMatchesExpected;
 import static com.goltqup.morphy.TournamentProvider.getExpectedTournament;
 import static reactor.test.StepVerifier.create;
 
-public class TournamentClientTest {
+public class TournamentClientIT {
 
     @Rule
     public WireMockRule wireMockRule = new WireMockRule(DYNAMIC_PORT);
@@ -38,7 +38,7 @@ public class TournamentClientTest {
 
     @Test
     public void testGetTournaments() throws IOException {
-        final String tournamentJson = getResourceAsString("response_bodies/tournaments.json");
+        final String tournamentJson = getResourceAsString("expected/tournaments.json");
         stubFor(get(urlEqualTo("/tournaments"))
                 .willReturn(okJson(tournamentJson)));
 
@@ -54,7 +54,7 @@ public class TournamentClientTest {
 
     @Test
     public void testGetTournamentById() throws IOException {
-        final String tournamentJson = getResourceAsString("response_bodies/tournament.json");
+        final String tournamentJson = getResourceAsString("expected/tournament.json");
         stubFor(get(urlEqualTo("/tournaments/RklGQVJ1c3NpYTIwMTg="))
                 .willReturn(okJson(tournamentJson)));
 
