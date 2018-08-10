@@ -7,6 +7,7 @@ import lombok.Getter;
 import java.util.Set;
 import java.util.TreeSet;
 
+import static com.goltqup.morphy.util.MorphyUtils.areEqualCollections;
 import static java.util.Collections.unmodifiableSet;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toCollection;
@@ -47,7 +48,9 @@ public class Group {
         if (object == this) return true;
         if (!(object instanceof Group)) return false;
         final Group other = (Group) object;
-        return id.equals(other.id) && name.equals(other.name);
+        return id.equals(other.id) && name.equals(other.name)
+                && areEqualCollections(teamSet, other.teamSet)
+                && areEqualCollections(matchSet, other.matchSet);
     }
 
     public int hashCode() {

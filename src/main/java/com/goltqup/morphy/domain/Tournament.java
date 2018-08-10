@@ -7,6 +7,7 @@ import lombok.Getter;
 import java.util.Set;
 import java.util.TreeSet;
 
+import static com.goltqup.morphy.util.MorphyUtils.areEqualCollections;
 import static java.util.Collections.unmodifiableSet;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toCollection;
@@ -51,7 +52,8 @@ public class Tournament {
         return id.equals(other.id)
                 && name.equals(other.name)
                 && place.equals(other.place)
-                && year == other.year;
+                && year == other.year
+                && areEqualCollections(groupSet, other.groupSet);
     }
 
     public int hashCode() {

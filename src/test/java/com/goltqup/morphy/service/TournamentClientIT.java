@@ -19,8 +19,8 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.verify;
 import static com.github.tomakehurst.wiremock.core.Options.DYNAMIC_PORT;
 import static com.goltqup.morphy.TestUtils.getResourceAsString;
-import static com.goltqup.morphy.TournamentAssert.tournamentMatchesExpected;
-import static com.goltqup.morphy.TournamentProvider.getExpectedTournament;
+import static com.goltqup.morphy.TournamentProvider.getExpectedTournamentFromJson;
+import static java.util.function.Predicate.isEqual;
 import static reactor.test.StepVerifier.create;
 
 public class TournamentClientIT {
@@ -44,8 +44,9 @@ public class TournamentClientIT {
 
         final Flux<Tournament> tournamentFlux = tournamentClient.getTournaments();
 
+        final Tournament expectedTournamentFromJson = getExpectedTournamentFromJson();
         create(tournamentFlux)
-                .expectNextMatches(tournament -> tournamentMatchesExpected(tournament, getExpectedTournament()))
+                .expectNextMatches(isEqual(expectedTournamentFromJson))
                 .expectComplete()
                 .verify();
 
@@ -60,8 +61,9 @@ public class TournamentClientIT {
 
         final Mono<Tournament> tournamentFlux = tournamentClient.getTournament("RklGQVJ1c3NpYTIwMTg=");
 
+        final Tournament expectedTournamentFromJson = getExpectedTournamentFromJson();
         create(tournamentFlux)
-                .expectNextMatches(tournament -> tournamentMatchesExpected(tournament, getExpectedTournament()))
+                .expectNextMatches(isEqual(expectedTournamentFromJson))
                 .expectComplete()
                 .verify();
 

@@ -6,10 +6,8 @@ import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Date;
+import java.util.Objects;
 
-import static java.time.LocalDateTime.ofInstant;
 import static org.springframework.util.Assert.hasText;
 import static org.springframework.util.Assert.notNull;
 
@@ -38,7 +36,13 @@ public class Match {
         if (object == this) return true;
         if (!(object instanceof Match)) return false;
         final Match other = (Match) object;
-        return this.id.equals(other.id);
+        return this.id.equals(other.id)
+                && Objects.equals(stadium, other.stadium)
+                && Objects.equals(schedule, other.schedule)
+                && Objects.equals(localTeam, other.localTeam)
+                && Objects.equals(localGoals, other.localGoals)
+                && Objects.equals(visitorTeam, other.visitorTeam)
+                && Objects.equals(visitorGoals, other.visitorGoals);
     }
 
     public int hashCode() {
@@ -62,7 +66,7 @@ public class Match {
 
         public MatchBuilder(@JsonProperty("id") final String id,
                             @JsonProperty("stadium") final String stadium,
-                            @JsonProperty("schedule") final Date schedule,
+                            @JsonProperty("schedule") final LocalDateTime schedule,
                             @JsonProperty("localTeam") final String localTeam,
                             @JsonProperty("visitorTeam") final String visitorTeam) {
             hasText(stadium, "Stadium must have text.");
@@ -72,7 +76,7 @@ public class Match {
 
             this.id = id;
             this.stadium = stadium;
-            this.schedule = ofInstant(schedule.toInstant(), ZoneId.of("GMT"));
+            this.schedule = schedule;
             this.localTeam = localTeam;
             this.visitorTeam = visitorTeam;
         }
