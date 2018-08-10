@@ -4,9 +4,9 @@ import java.util.Collection;
 
 import static org.apache.commons.collections4.CollectionUtils.isEqualCollection;
 
-public class MorphyUtils {
+public class CollectionUtils {
 
-    private MorphyUtils() {
+    private CollectionUtils() {
         throw new UnsupportedOperationException();
     }
 
